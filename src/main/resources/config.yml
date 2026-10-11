@@ -1,0 +1,52 @@
+# UltimateBan Configuration
+
+# Default reason if none is provided
+default-reason: "No reason specified"
+
+# Broadcast bans to everyone on the server
+broadcast-ban: true
+
+# Broadcast unbans to everyone on the server
+broadcast-unban: true
+
+# Broadcast kicks to everyone on the server
+broadcast-kick: true
+
+# Messages (use & for color codes, {player}, {reason}, {time}, {staff} are placeholders)
+messages:
+  prefix: "&8[&cUltimateBan&8] &r"
+
+  # Ban messages
+  ban-success: "&a{player} &7has been banned by &c{staff}&7. Reason: &f{reason}"
+  ban-broadcast: "&c{player} &7was banned by &c{staff}&7. Reason: &f{reason}"
+  ban-already: "&c{player} is already banned!"
+  ban-usage: "&eUsage: /ban <player> <reason>"
+
+  # TempBan messages
+  tempban-success: "&a{player} &7has been temp-banned for &e{time}&7 by &c{staff}&7. Reason: &f{reason}"
+  tempban-broadcast: "&c{player} &7was temp-banned for &e{time}&7 by &c{staff}&7. Reason: &f{reason}"
+  tempban-usage: "&eUsage: /tempban <player> <time> <reason>"
+  tempban-invalid-time: "&cInvalid time format! Use like: 1d, 2h, 30m, 60s"
+
+  # Unban messages
+  unban-success: "&a{player} &7has been unbanned by &c{staff}&7."
+  unban-broadcast: "&a{player} &7was unbanned by &c{staff}&7."
+  unban-not-banned: "&c{player} is not banned!"
+  unban-usage: "&eUsage: /unban <player>"
+
+  # Kick messages
+  kick-success: "&a{player} &7has been kicked by &c{staff}&7. Reason: &f{reason}"
+  kick-broadcast: "&c{player} &7was kicked by &c{staff}&7. Reason: &f{reason}"
+  kick-usage: "&eUsage: /kick <player> <reason>"
+
+  # BanList messages
+  banlist-header: "&8&m----------&r &cBan List &8&m----------"
+  banlist-entry: "&c{player} &7- Reason: &f{reason} &7- By: &c{staff}"
+  banlist-empty: "&7No players are currently banned."
+  banlist-footer: "&8&m------------------------------"
+
+  # Kick screen (shown to banned player)
+  kick-screen: "&cYou have been banned!\n&7Reason: &f{reason}\n&7By: &c{staff}"
+
+  # Join message for banned player
+  join-denied: "&cYou are banned from this server!\n&7Reason: &f{reason}\n&7By: &c{staff}"
