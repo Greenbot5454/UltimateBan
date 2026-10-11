@@ -1,0 +1,48 @@
+name: UltimateBan
+version: 2.2.4
+main: ir.Greenbot.ultimateban.UltimateBan
+api-version: '1.21'
+author: Greenbot5454
+description: Advanced ban plugin
+
+commands:
+  ban:
+    description: Ban a player permanently
+    usage: /ban <player> <reason>
+    permission: ultimateban.ban
+  tempban:
+    description: Temporarily ban a player
+    usage: /tempban <player> <time> <reason>
+    permission: ultimateban.tempban
+  unban:
+    description: Unban a player
+    usage: /unban <player>
+    permission: ultimateban.unban
+  kick:
+    description: Kick a player
+    usage: /kick <player> <reason>
+    permission: ultimateban.kick
+  banlist:
+    description: Show the ban list
+    usage: /banlist
+    permission: ultimateban.banlist
+
+permissions:
+  ultimateban.ban:
+    description: Allows banning players
+    default: op
+  ultimateban.tempban:
+    description: Allows temp-banning players
+    default: op
+  ultimateban.unban:
+    description: Allows unbanning players
+    default: op
+  ultimateban.kick:
+    description: Allows kicking players
+    default: op
+  ultimateban.banlist:
+    description: Allows viewing ban list
+    default: op
+  ultimateban.admin:
+    description: Full access
+    default: op
